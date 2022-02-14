@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Google Sans Medium Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans Medium Regular"),
+    url("../assets/css/ProductSans-Medium.woff") format("woff");
+}
+img,
+svg {
+  vertical-align: text-bottom !important;
+}
+.mb-3 {
+  margin-bottom: 0 !important;
+}
+.jorge {
+  background-color: #000;
+  color: rgb(217, 217, 217);
+  width: 600px;
+  height: 650px;
+  border-radius: 15px;
+  h1 {
+    font-size: 1.438rem;
+    font-weight: 700;
+    margin-bottom: 0px !important;
+  }
+  .close-widow {
+    transition-property: background-color, box-shadow;
+    outline-style: none;
+    transition-duration: 0.2s;
+    min-width: 36px;
+    min-height: 36px;
+    user-select: none;
+    border-width: 1px;
+    border-radius: 9999px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 3px;
+  }
+  .close-widow:hover {
+    background-color: rgba(239, 243, 244, 0.1);
+  }
+  .main-content__title {
+    margin-left: -117px;
+  }
+  button {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    width: 300px;
+    height: 39px;
+    margin: 12px 0;
+    max-width: 400px;
+    min-width: min-content;
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      border: none;
+      box-shadow: none;
+    }
+    &.btn-google {
+      span {
+        font-family: "Google Sans Medium Regular", arial, sans-serif;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #3c4043;
+        cursor: pointer;
+        font-size: 14px;
+        letter-spacing: 0.25px;
+        text-align: center;
+        white-space: nowrap;
+        margin-left: 10px;
+      }
+    }
+    &.btn-apple {
+      span {
+        color: rgb(15, 20, 25);
+        font-weight: 700;
+        margin-left: 5px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+@import url(../assets/css/animated-input.css);
