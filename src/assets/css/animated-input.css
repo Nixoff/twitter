@@ -1,0 +1,74 @@
+.footer 	{ text-align:center; }
+.footer a  { color:#53B2C8; }
+
+/* form starting stylings ------------------------------- */
+.group 			  {
+  position:relative;
+  margin-bottom:45px;
+}
+input 				{
+  font-size:18px;
+  padding:12px 8px 8px 8px;
+  display:block;
+  width:300px;
+  border: 1px solid rgb(47, 51, 54);
+  height: 60px;
+  background-color: transparent;
+  text-align: center;
+}
+input:focus 		{ outline:none; border: 1px solid rgb(29, 155, 240); box-shadow: rgb(29, 155, 240) 0px 0px 0px 1px;}
+
+/* LABEL ======================================= */
+label 				 {
+  color:rgb(217, 217, 217);
+  opacity: .5;
+  font-size:17px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:8px;
+  top:15px;
+  /* transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all; */
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top: 5.3px;
+  font-size:13px;
+  color:rgb(29, 155, 240);
+  opacity: 1;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
