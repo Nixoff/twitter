@@ -14,5 +14,10 @@ body {
     .flex-column > form:nth-child(1) {
       margin-top: 5.06rem !important;
     }
+
+    .navbar {
+      position: fixed !important;
+      width: 100vw;
+    }
   }
 }
