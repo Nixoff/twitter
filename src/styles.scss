@@ -9,7 +9,11 @@ body {
   }
   body > app-root:nth-child(1) > div {
     .jorge {
-      height: 100vh;
+      height: 70vh;
+      main > div > form #inputpo:focus ~ body > app-root:nth-child(1) > div > .flex-column > form:nth-child(1) {
+        margin-top: 2.06rem !important;
+        background-color: red !important;
+      }
     }
     .flex-column > form:nth-child(1) {
       margin-top: 5.06rem !important;
